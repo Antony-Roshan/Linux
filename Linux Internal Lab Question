@@ -1,0 +1,254 @@
+Create the directory structure for the college management system{MCA,MBA}. Under the
+directory MCA create two subdirectories{Regular and Lateral}.Create a file named ‘mca_file’
+with 5 lines of contents in MCA. Create a file named ‘mba_file’ with 3
+columns(roll:no,name,specialization : finance,taxation,marketing).
+a)Rename the file ‘mca_file’ in MCA to mcanew_file.
+b) Display the file permission details of each file and directories in the directory MCA.
+c)Find a specific word from the file mcanew_file in MCA
+d)Find the number of lines in the file mcanew_file in MCA
+e)Sort file ‘mba_file’ based on roll:no .
+f) Replace all occurrence of a word ‘marketing’ with ‘accounting’ in mba_file.
+g)Print Specialization column from mba_file using awk command.
+h)Cut 1st and 2nd column from mba_file.
+i)Print first 3 lines of mcanew_file.
+j)Convert all lowercase to uppercase from ‘mcanew_file’.
+k)Remove all duplication words from a file ‘mcanew_file’.
+
+
+
+user@user-H110M-S2:~/Desktop/roshan$ mkdir MCA
+user@user-H110M-S2:~/Desktop/roshan$ cd MCA
+user@user-H110M-S2:~/Desktop/roshan/MCA$ mkdir Regular
+user@user-H110M-S2:~/Desktop/roshan/MCA$ mkdir Lateral
+user@user-H110M-S2:~/Desktop/roshan/MCA$ ls
+Lateral  Regular
+user@user-H110M-S2:~/Desktop/roshan/MCA$ cd
+user@user-H110M-S2:~$ cd Desktop/roshan/MCA
+user@user-H110M-S2:~/Desktop/roshan/MCA$ cat > mca_file
+Welcome    
+to MCA Department          
+Linux is free
+java is object Oriented
+Operating System
+^C
+user@user-H110M-S2:~/Desktop/roshan/MCA$ cat mca_file
+Welcome 
+to MCA Department
+Linux is free
+java is object Oriented
+Operating System
+user@user-H110M-S2:~/Desktop/roshan/MCA$ cd
+user@user-H110M-S2:~$ cd Desktop/roshan/
+user@user-H110M-S2:~/Desktop/roshan$ mkdir MBA
+user@user-H110M-S2:~/Desktop/roshan$ cd MBA
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cat > mba_file
+1 Joseph Security Breach
+2 Joseph Terminate             
+3 Robin Spectator
+4 Roshan CEO of World
+5 Manu Analyst
+^C
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cat mba_file
+1 Joseph Security Breach
+2 Joseph Terminate
+3 Robin Spectator
+4 Roshan CEO of World
+5 Manu Analyst
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cd..
+cd..: command not found
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cd..
+cd..: command not found
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cd MCA
+bash: cd: MCA: No such file or directory
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cd
+user@user-H110M-S2:~$ cd Desktop/roshan/Mca
+bash: cd: Desktop/roshan/Mca: No such file or directory
+user@user-H110M-S2:~$ rename mca_file mcanew_file
+
+Command 'rename' not found, but can be installed with:
+
+sudo apt install rename
+
+user@user-H110M-S2:~$ mv mca_file mcanew_file
+mv: cannot stat 'mca_file': No such file or directory
+user@user-H110M-S2:~$ cd Desktop/roshan/Mca
+bash: cd: Desktop/roshan/Mca: No such file or directory
+user@user-H110M-S2:~$ cd Desktop/roshan/MCA
+user@user-H110M-S2:~/Desktop/roshan/MCA$ mv mca_file mcanew_file
+user@user-H110M-S2:~/Desktop/roshan/MCA$ cat mcanew_file
+Welcome 
+to MCA Department
+Linux is free
+java is object Oriented
+Operating System
+user@user-H110M-S2:~/Desktop/roshan/MCA$ ls -l
+total 12
+drwxrwxr-x 2 user user 4096 Jan 16 09:46 Lateral
+-rw-rw-r-- 1 user user   82 Jan 16 09:49 mcanew_file
+drwxrwxr-x 2 user user 4096 Jan 16 09:45 Regular
+user@user-H110M-S2:~/Desktop/roshan/MCA$ grep Linux mcanew_file
+Linux is free
+user@user-H110M-S2:~/Desktop/roshan/MCA$ wc -l mcanew_file
+5 mcanew_file
+user@user-H110M-S2:~/Desktop/roshan/MCA$ cd
+user@user-H110M-S2:~$ cd Desktop/roshan/MBA
+user@user-H110M-S2:~/Desktop/roshan/MBA$ sort -nr mba_file
+5 Manu Analyst
+4 Roshan CEO of World
+3 Robin Spectator
+2 Joseph Terminate
+1 Joseph Security Breach
+user@user-H110M-S2:~/Desktop/roshan/MBA$ sort -n mba_file
+1 Joseph Security Breach
+2 Joseph Terminate
+3 Robin Spectator
+4 Roshan CEO of World
+5 Manu Analyst
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cat >> mba_file
+6 Jiya Marketing
+^C
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cat mba_file
+1 Joseph Security Breach
+2 Joseph Terminate
+3 Robin Spectator
+4 Roshan CEO of World
+5 Manu Analyst
+6 Jiya Marketing
+user@user-H110M-S2:~/Desktop/roshan/MBA$ sed 's/Marketing/Accounting' mba_file
+sed: -e expression #1, char 22: unterminated `s' command
+user@user-H110M-S2:~/Desktop/roshan/MBA$ ^C
+user@user-H110M-S2:~/Desktop/roshan/MBA$ sed 's/Marketing/Accounting/' mba_file
+1 Joseph Security Breach
+2 Joseph Terminate
+3 Robin Spectator
+4 Roshan CEO of World
+5 Manu Analyst
+6 Jiya Accounting
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cut cut -c 1,2,3,mba_file
+cut: invalid byte/character position ‘mba_file’
+Try 'cut --help' for more information.
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cut -c 1,2,3,mba_file
+cut: invalid byte/character position ‘mba_file’
+Try 'cut --help' for more information.
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cut -c 1,2,3 mba_file
+1 J
+2 J
+3 R
+4 R
+5 M
+6 J
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cut -w 1,2,3 mba_file
+cut: invalid option -- 'w'
+Try 'cut --help' for more information.
+user@user-H110M-S2:~/Desktop/roshan/MBA$ awk : 3 mba
+awk: line 1: syntax error at or near :
+user@user-H110M-S2:~/Desktop/roshan/MBA$ 
+user@user-H110M-S2:~/Desktop/roshan/MBA$ 
+user@user-H110M-S2:~/Desktop/roshan/MBA$ awk : 3 mba_file
+awk: line 1: syntax error at or near :
+user@user-H110M-S2:~/Desktop/roshan/MBA$ awk :3 mba_file
+awk: line 1: syntax error at or near :
+user@user-H110M-S2:~/Desktop/roshan/MBA$ awk '(print $3)' mba_file
+awk: line 1: syntax error at or near print
+user@user-H110M-S2:~/Desktop/roshan/MBA$ awk '{print $3}' mba_file
+Security
+Terminate
+Spectator
+CEO
+Analyst
+Marketing
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cut 1,2,3 mba_file
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cut -d ' ' -f1,2 mbafile
+cut: mbafile: No such file or directory
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cut -d ' ' -f1,2 mba_file
+1 Joseph
+2 Joseph
+3 Robin
+4 Roshan
+5 Manu
+6 Jiya
+user@user-H110M-S2:~/Desktop/roshan/MBA$ cd
+user@user-H110M-S2:~$ cd Desktop/roshan/MCA
+user@user-H110M-S2:~/Desktop/roshan/MCA$ head -3 mcanew_file
+Welcome 
+to MCA Department
+Linux is free
+user@user-H110M-S2:~/Desktop/roshan/MCA$ cat mcanew_file
+Welcome 
+to MCA Department
+Linux is free
+java is object Oriented
+Operating System
+user@user-H110M-S2:~/Desktop/roshan/MCA$ tr "[a-z]" "[A-Z]" <mcanewfile
+bash: mcanewfile: No such file or directory
+user@user-H110M-S2:~/Desktop/roshan/MCA$ tr "[a-z]" "[A-Z]" <mcanew_file
+WELCOME 
+TO MCA DEPARTMENT
+LINUX IS FREE
+JAVA IS OBJECT ORIENTED
+OPERATING SYSTEM
+user@user-H110M-S2:~/Desktop/roshan/MCA$ tr "[A-Z]" "[a-z]" <mcanew_file
+welcome 
+to mca department
+linux is free
+java is object oriented
+operating system
+user@user-H110M-S2:~/Desktop/roshan/MCA$ tr "[a-z]" "[A-Z]" <mcanew_file
+WELCOME 
+TO MCA DEPARTMENT
+LINUX IS FREE
+JAVA IS OBJECT ORIENTED
+OPERATING SYSTEM
+user@user-H110M-S2:~/Desktop/roshan/MCA$ uniq mcanew_file
+Welcome 
+to MCA Department
+Linux is free
+java is object Oriented
+Operating System
+user@user-H110M-S2:~/Desktop/roshan/MCA$ cat >> mcanew_file
+Linux is free
+^C
+user@user-H110M-S2:~/Desktop/roshan/MCA$ uniq mcanew_file
+Welcome 
+to MCA Department
+Linux is free
+java is object Oriented
+Operating System
+Linux is free
+user@user-H110M-S2:~/Desktop/roshan/MCA$ cat >unique
+hello
+hello
+hi
+^C
+user@user-H110M-S2:~/Desktop/roshan/MCA$ uniq unique
+hello
+hi
+
+
+
+
+
+
+Create the directory structure for college management system{MCA,MBA}. Under the directory
+MCA create two subdirectories{Regular and Lateral}.Create a file named ‘mca_file’ with 5 lines
+of contents in MCA. Create a file named ‘mba_file’ with 3 columns(roll:no,name,specialization :
+finance,taxation,marketing).
+a)Rename the file ‘mca_file’ in MCA to mcanew_file.
+b)Create an empty file named file1.txt in ‘Regular’ directory in MCA.
+c)Move the file file1.txt in MCA to MBA
+d) Display the file owner of a file file1.txt in directory MBA.
+e)Find a specific word from the file mcanew_file in MCA
+f)Find the number of words in the file mcanew_file in MCA
+g)Sort file ‘mba_file’ based on specialization.
+h) Replace all occurrence of a word ‘marketing’ with ‘accounting’ in mba_file.
+i)Cut Specialization from a file named ‘mba_file’.
+j) Print a pattern ‘finance’ from a file ‘mba_file’ using awk command
+k)Print last 3 lines of mcanew_file.
+
+
+
+
+
+
