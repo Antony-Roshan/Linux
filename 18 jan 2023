@@ -217,3 +217,44 @@ exit
 user@user-H110M-S2:~/Desktop/roshan$ cat myself
 cat: myself: No such file or directory
 user@user-H110M-S2:~/Desktop/roshan$ 
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+
+user@user-H110M-S2:~/Desktop/roshan$ a=3
+user@user-H110M-S2:~/Desktop/roshan$ echo $a
+3
+user@user-H110M-S2:~/Desktop/roshan$ sh
+$ echo $a
+
+$ a=5
+$ echo $a 
+5
+$ sh
+$ echo $a
+
+$ 
+$ echo $a
+5
+$ 
+user@user-H110M-S2:~/Desktop/roshan$ echo $a
+3
+user@user-H110M-S2:~/Desktop/roshan$ a=6
+user@user-H110M-S2:~/Desktop/roshan$ export a
+user@user-H110M-S2:~/Desktop/roshan$ sh
+$ echo $a
+6
+$ a=4
+$ echo $a
+4
+$ sh
+$ echo $a
+4
+$ echo $a       
+4
+$ 
+$ 
+user@user-H110M-S2:~/Desktop/roshan$ echo $a
+6
+user@user-H110M-S2:~/Desktop/roshan$
