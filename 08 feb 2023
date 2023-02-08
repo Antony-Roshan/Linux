@@ -1,0 +1,23 @@
+ user@user-To-be-filled-by-O-E-M:~$ echo "Todays date is `date` "
+Todays date is Wednesday 08 February 2023 11:34:41 AM IST 
+(base) user@user-To-be-filled-by-O-E-M:~$ echo "Todays date is `date`"
+Todays date is Wednesday 08 February 2023 11:34:48 AM IST
+(base) user@user-To-be-filled-by-O-E-M:~$ a=4
+(base) user@user-To-be-filled-by-O-E-M:~$ b=6
+(base) user@user-To-be-filled-by-O-E-M:~$ expr $a + $b
+10
+(base) user@user-To-be-filled-by-O-E-M:~$ expr $a / $b
+0
+(base) user@user-To-be-filled-by-O-E-M:~$ expr $b / $a
+1
+(base) user@user-To-be-filled-by-O-E-M:~$ expr $b \* $a
+24
+(base) user@user-To-be-filled-by-O-E-M:~$ a=`expr $a + $b`
+(base) user@user-To-be-filled-by-O-E-M:~$ echo $a
+10
+(base) user@user-To-be-filled-by-O-E-M:~$ x=`echo "12+5" | bc`
+(base) user@user-To-be-filled-by-O-E-M:~$ echo $x
+17
+(base) user@user-To-be-filled-by-O-E-M:~$ echo "var=10;--var" | bc
+9
+(base) user@user-To-be-filled-by-O-E-M:~$ 
