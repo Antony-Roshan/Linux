@@ -1,0 +1,72 @@
+MCA 306- Linux Lab Record programs
+SET1: Commands
+1. Installation of Linux Operating system.
+2. Demonstrate a College Management system in Linux using File and Directory commands.
+3. Familiarize and execute the commands of vi Editor.
+4. Practice the Filter commands in Linux with suitable examples.
+5. How to execute Redirection and pipes in Linux.
+6. Implement File Administration commands in Linux.
+7. Execute the Disk related commands in Linux
+8. Illustrate the communication commands in Linux.
+SET 2: Shell Scripts.
+1. Write a script to read any 2 floating values and find the sum, difference, quotient, and remainder.
+2. Write a script to read the length and breadth of a rectangle and radius of a circle and calculate the area
+and perimeter of the rectangle and area and circumference of the circle.
+3. Write a shell program to find
+a) Sum of digits of a number
+b) Reverse of the number
+c) Determine whether the given number is a palindrome or not.
+Programme Structure & Syllabus MCA 2020 | Page 66
+4. Write a shell script to display the digits which are in odd positions in a given integer.
+5. Write a script to read the basic salary of n employees and calculate the gross salary
+If BP<15000, DA=30% of BP, HRA =Rs 500. TA = 10% of BP.
+If BP >=5000, DA=50% of BP, HRA=15%, TA=1000.
+6. Write a script to read the cost and selling price of an item and to decide how much loss or profit has
+incurred by the seller.
+7. Write a script to read 5 marks of n students. Find the total and return distinction if the total percentage
+>= 80. [Distinction] if total % is >=60 and <80 [first class].if total % is >=50 and <60 [second class]
+else print failed [<50].
+8. Write a script to read a character and to display if it is lowercase, uppercase, digit or special character
+or not a character.
+9. Write a script to prepare a multiplication table of a given number to any order.
+10. Write a script to find the value of one number raised to the power
+11. Write a script to print all prime numbers from 1 to n.
+12. Write a script to generate all combinations of a, b and c.
+13. Write a shell script to sum up the following series
+1/1! + 2/2! + 3/3! + ....
+14. Write a script to read a year and to decide whether it is a leap year or not. If no year is supplied then
+the current year is assumed.
+15. Shell script to perform operations like display, list, make directory and copy, rename, delete, edit file.
+16. Write a menu driven program to display the following options.
+ Contents of /etc/passwd
+ List of output of ‘who’
+ Present working directory
+ Exit
+17. Write a shell script to find how many terminals this user logged in.
+18. Write a script to accept a filename while running the script and check it has the write permission, if
+yes prompt the user to enter a text and append the text to the given filename.
+19. Write a shell script which displays a list of all files in the current directory to which you have read,
+write & execute permissions.
+20. Write a shell script which receives two file names as arguments.It should check whether the two file’s
+contents are the same or not .If they are the same, delete the second file.
+21. Write a shell script, which will receive any number of filenames as arguments .The shell script should
+check whether such files already exist.
+22. Write a shell script to perform operations for student data like view, add and delete records.
+23. Write a shell script to sort the given numbers in descending order using Bubble sort .
+24. Write a shell program to find the factorial of a number using function.
+25. Write a shell program to determine whether the given string is palindrome or not using function.
+26. Write a script to rename all c files to cpp files.
+27. The word “mca” is present in some of the files supplied as arguments. Write a script to search each
+of these files, and to stop at the first file containing the word “mca” and report it.
+28. Write a script to receive any number of filenames as arguments and to check whether the arguments
+supplied is a file or directory. If it is a directory, it should be appropriately reported. if it is a filename
+then name of the file as well as the number of lines present in it should be reported.
+Programme Structure & Syllabus MCA 2020 | Page 67
+29. Write a script to read from a file which is supplied as a command line argument and count the number
+of lines and words. If there is no filename supplied, the script should accept text from the keyboard.
+30. Write a shell script which receives an even number of file names. Suppose four file names are supplied
+then the first file should get copied into the second file, the third file should get copied into the fourth
+file, and so on. If odd numbers of file names are supplied then no copying should take place and an
+error message should be displayed.
+31. Write a script to wish the user “Good Morning, Good Afternoon and Good Evening” when he logs in
+to the system based on the time
