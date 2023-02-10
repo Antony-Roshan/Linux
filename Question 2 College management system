@@ -1,0 +1,79 @@
+Question 2 
+Demonstrate a College Management system in Linux using File and Directory commands.
+
+1.creation of file - cat
+
+lab3-04@lab3-04:~/Desktop/roshan$ cat > college
+Welcome to UC College
+Uc college is located in Aluva                 
+It is one of the earliest colleges in India
+It is a first grade college with over 2200 students
+It has completed 100 years 
+It haves diffferent banches of study areas
+^C
+lab3-04@lab3-04:~/Desktop/roshan$ cat college
+Welcome to UC College
+Uc college is located in Aluva
+It is one of the earliest colleges in India
+It is a first grade college with over 2200 students
+It has completed 100 years 
+It haves diffferent banches of study areas
+
+
+2.Head & Tail
+
+the head command will output the first part of the file
+The head command will, by default, write the first ten lines of the input file
+The tail command will print the last part of the file
+The tail command will by default write the last ten lines of the input file
+
+lab3-04@lab3-04:~/Desktop/roshan$ head -2 college
+Welcome to UC College
+Uc college is located in Aluva
+lab3-04@lab3-04:~/Desktop/roshan$ tail -2 college
+It has completed 100 years 
+It haves diffferent banches of study areas
+
+
+3.Copy
+cp - copying a file 
+
+lab3-04@lab3-04:~/Desktop/roshan$ cp college UC
+lab3-04@lab3-04:~/Desktop/roshan$ cat UC
+Welcome to UC College
+Uc college is located in Aluva
+It is one of the earliest colleges in India
+It is a first grade college with over 2200 students
+It has completed 100 years 
+It haves diffferent banches of study areas
+
+
+4.Remove
+rm - Remove a file
+
+lab3-04@lab3-04:~/Desktop/roshan$ rm UC
+lab3-04@lab3-04:~/Desktop/roshan$ ls
+college
+lab3-04@lab3-04:~/Desktop/roshan$ cat UC
+cat: UC: No such file or directory
+
+5.Rename
+mv - Rename a file
+
+lab3-04@lab3-04:~/Desktop/roshan$ mv college uc
+lab3-04@lab3-04:~/Desktop/roshan$ cat uc
+Welcome to UC College
+Uc college is located in Aluva
+It is one of the earliest colleges in India
+It is a first grade college with over 2200 students
+It has completed 100 years 
+It haves diffferent banches of study areas
+lab3-04@lab3-04:~/Desktop/roshan$ cat college
+cat: college: No such file or directory
+
+
+
+
+
+
+
