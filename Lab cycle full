@@ -4,11 +4,28 @@ SET1: Commands
 2. Demonstrate a College Management system in Linux using File and Directory commands.
 3. Familiarize and execute the commands of vi Editor.
 4. Practice the Filter commands in Linux with suitable examples.
+
+Grep  
+wc filter
+cut
+tr
+
 5. How to execute Redirection and pipes in Linux.
+
+ pipes : tee
+ Redirection
+
 6. Implement File Administration commands in Linux.
+
+su
+sudo
+
 7. Execute the Disk related commands in Linux
 8. Illustrate the communication commands in Linux.
+
+
 SET 2: Shell Scripts.
+
 1. Write a script to read any 2 floating values and find the sum, difference, quotient, and remainder.
 2. Write a script to read the length and breadth of a rectangle and radius of a circle and calculate the area
 and perimeter of the rectangle and area and circumference of the circle.
@@ -36,6 +53,8 @@ or not a character.
 1/1! + 2/2! + 3/3! + ....
 14. Write a script to read a year and to decide whether it is a leap year or not. If no year is supplied then
 the current year is assumed.
+
+
 15. Shell script to perform operations like display, list, make directory and copy, rename, delete, edit file.
 16. Write a menu driven program to display the following options.
  Contents of /etc/passwd
