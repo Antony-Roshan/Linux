@@ -1,0 +1,25 @@
+Directory Commands 
+
+1.pwd - Identifying current directory path 
+
+lab3-04@lab3-04:~/Desktop/roshan$ pwd
+/home/lab3-04/Desktop/roshan
+
+2.mkdir - Creation of a diretory
+
+lab3-04@lab3-04:~/Desktop/roshan$ mkdir test
+lab3-04@lab3-04:~/Desktop/roshan$ ls
+test  uc
+
+3.cd Changing the current Directory
+
+lab3-04@lab3-04:~/Desktop/roshan$ cd test
+lab3-04@lab3-04:~/Desktop/roshan/test$ 
+
+4.Moving a file to directory - mv
+
+lab3-04@lab3-04:~/Desktop/roshan$ mv uc /home/lab3-04/Desktop/roshan/test
+lab3-04@lab3-04:~/Desktop/roshan$ cd test
+lab3-04@lab3-04:~/Desktop/roshan/test$ ls
+uc
+
