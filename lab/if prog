@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "Enter numbers:"
+read a
+read b
+
+echo "a is : "$a
+echo "b is : "$b
+
+if((a>b))
+then
+	echo "a is greatest"
+else
+	echo "b is greatest"
+fi
+
+if [ $a -ge $b ]
+then
+	echo "a is greatest"
+else
+	echo "b is greatest"
+fi

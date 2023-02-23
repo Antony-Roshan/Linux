@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Enter the number"
+read num
+echo "Enter limit"
+read limit
+
+for((a=1;a<=limit;a=a+1))
+do
+((sum=a*num))
+echo $num "*" $a "=" $sum
+done 

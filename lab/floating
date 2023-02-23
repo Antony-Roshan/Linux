@@ -1,0 +1,22 @@
+#!/bin/bash
+echo "Enter two floating numbers"
+read a
+read b
+
+echo "Select an option \n1.sum\n2.difference\n3.Quotient\n4.Remainder"
+read ch
+case $ch in
+1) sum=`echo $a + $b |bc`
+echo "Sum is : "$sum;;
+
+2) diff=`echo $a - $b |bc`
+echo "Difference is : "$diff;;
+
+3) q=`echo $a / $b |bc`
+echo "Quotient is : "$q;;
+
+4) r=`echo $a % $b |bc`
+echo "Remainder is : "$r;;
+
+*) echo "Invalid Input"
+esac

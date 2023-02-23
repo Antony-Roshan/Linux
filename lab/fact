@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Enter the number"
+read num
+
+fact=1
+for((a=1;a<=num;a=a+1))
+do
+((fact=fact*a))
+done
+echo "Factorial is : " $fact

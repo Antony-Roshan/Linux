@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Enter the number"
+read num
+if (($num>0))
+then
+echo "Positive"
+exit
+else
+echo "negative"
+fi
+echo "88888"
